@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Темный фон иконки APK -->
+  <rect width="512" height="512" rx="112" fill="#0D1117"/>
+
+  <defs>
+    <!-- Градиент чипа -->
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Неоновый синий градиент -->
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#4FACFE"/>
+    </linearGradient>
+
+    <!-- Неоновый фиолетовый градиент -->
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF0844"/>
+      <stop offset="100%" stop-color="#FFB199"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Внешний светящийся контур -->
+  <rect x="106" y="106" width="300" height="300" rx="40" fill="url(#chipGrad)" stroke="url(#neonCyan)" stroke-width="8"/>
+
+  <!-- Внутреннее ядро чипа -->
+  <rect x="176" y="176" width="160" height="160" rx="24" fill="#151D2A" stroke="url(#neonPurple)" stroke-width="6"/>
+
+  <!-- Контакты чипа (высокотехнологичные дорожки) -->
+  <!-- Верх и Низ -->
+  <path d="M216 106 V176 M256 106 V176 M296 106 V176" stroke="url(#neonCyan)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M216 336 V406 M256 336 V406 M296 336 V406" stroke="url(#neonCyan)" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Лево и Право -->
+  <path d="M106 216 H176 M106 256 H176 M106 296 H176" stroke="url(#neonPurple)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M336 216 H406 M336 256 H406 M336 296 H406" stroke="url(#neonPurple)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Светящиеся точки в центре ядра -->
+  <circle cx="236" cy="236" r="12" fill="#00F2FE"/>
+  <circle cx="276" cy="276" r="12" fill="#FF0844"/>
+</svg>
